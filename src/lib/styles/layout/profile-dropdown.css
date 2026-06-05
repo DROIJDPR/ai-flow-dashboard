@@ -1,0 +1,55 @@
+.profile-dropdown {
+	position: relative;
+}
+
+.profile-trigger {
+	width: 42px;
+	height: 42px;
+
+	border-radius: 50%;
+
+	border: none;
+
+	background: var(--accent);
+
+	color: white;
+
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	position: absolute;
+
+	top: 52px;
+	right: 0;
+
+	min-width: 180px;
+
+	background: var(--surface);
+
+	border: 1px solid var(--border);
+
+	border-radius: 12px;
+
+	padding: 0.5rem;
+
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.25rem;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+	padding: 0.75rem;
+
+	background: none;
+
+	border: none;
+
+	text-align: left;
+
+	color: var(--text);
+
+	cursor: pointer;
+}

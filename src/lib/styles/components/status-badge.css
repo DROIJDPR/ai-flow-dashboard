@@ -1,0 +1,30 @@
+.status-badge {
+	display: inline-flex;
+
+	align-items: center;
+
+	padding: 0.4rem 0.8rem;
+
+	border-radius: 999px;
+
+	font-size: 0.85rem;
+
+	font-weight: 500;
+}
+
+.status-active,
+.status-running {
+	background: rgba(16, 185, 129, 0.15);
+	color: #34d399;
+}
+
+.status-pending,
+.status-idle {
+	background: rgba(245, 158, 11, 0.15);
+	color: #fbbf24;
+}
+
+.status-offline {
+	background: rgba(239, 68, 68, 0.15);
+	color: #f87171;
+}

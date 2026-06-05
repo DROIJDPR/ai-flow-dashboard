@@ -1,0 +1,13 @@
+.page-title {
+	margin-bottom: 2rem;
+}
+
+.page-title h1 {
+	font-size: 2rem;
+
+	margin-bottom: 0.5rem;
+}
+
+.page-title p {
+	color: var(--muted);
+}

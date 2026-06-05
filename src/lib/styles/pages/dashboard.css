@@ -1,0 +1,48 @@
+.dashboard-layout {
+	display: flex;
+
+	min-height: 100vh;
+}
+
+.dashboard-content {
+	margin-left: 260px;
+
+	width: 100%;
+	
+}
+
+.dashboard-main {
+	padding: 2rem;
+}
+
+.stats-grid {
+	display: grid;
+
+	grid-template-columns:
+		repeat(
+			auto-fit,
+			minmax(220px, 1fr)
+		);
+
+	gap: 1.5rem;
+}
+
+.dashboard-grid {
+	display: grid;
+
+	grid-template-columns: 2fr 1fr;
+
+	gap: 1.5rem;
+
+	margin-top: 1.5rem;
+}
+
+.dashboard-main > * + * {
+	margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+	.dashboard-content {
+		margin-left: 0;
+	}
+}
