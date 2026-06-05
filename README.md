@@ -1,42 +1,53 @@
-# sv
+AIFlow Dashboard
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Modern SaaS dashboard built with SvelteKit and TypeScript.
 
-## Creating a project
+Live Demo
 
-If you're seeing this, you've probably already done this step. Congrats!
+https://ai-flow-dashboard.vercel.app/dashboard
 
-```sh
-# create a new project
-npx sv create my-app
-```
+Features
 
-To recreate this project with the same configuration:
+* Authentication UI
+* Dashboard Analytics
+* Users Management
+* AI Agents Monitoring
+* Settings Module
+* Dark / Light Theme
+* Responsive Layout
 
-```sh
-# recreate this project
-npx sv@0.15.4 create --template minimal --types ts --install npm ai-flow-dashboard
-```
+Tech Stack
 
-## Developing
+* SvelteKit
+* TypeScript
+* CSS
+* Vite
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Installation
 
-```sh
+npm install
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Production Build 
 
-## Building
-
-To create a production version of your app:
-
-```sh
 npm run build
-```
 
-You can preview the production build with `npm run preview`.
+Project Structure
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+src/
+├── lib/
+│   ├── components/
+│   ├── services/
+│   ├── stores/
+│   ├── styles/
+│   ├── types/
+│   └── mock/
+└── routes/
+
+Future Improvements
+
+* Backend integration
+* Authentication API
+* Real analytics
+* Advanced user management
+* Notifications system
