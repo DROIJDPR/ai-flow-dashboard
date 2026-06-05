@@ -14,7 +14,27 @@
 
 	color: white;
 
+	font-weight: 600;
+
 	cursor: pointer;
+
+	transition: transform 0.2s ease;
+}
+
+.profile-trigger:hover {
+	transform: scale(1.05);
+}
+
+.dropdown-overlay {
+	position: fixed;
+
+	inset: 0;
+
+	background: transparent;
+
+	border: none;
+
+	z-index: 998;
 }
 
 .dropdown-menu {
@@ -37,6 +57,11 @@
 	flex-direction: column;
 
 	gap: 0.25rem;
+
+	box-shadow:
+		0 10px 30px rgba(0, 0, 0, 0.15);
+
+	z-index: 999;
 }
 
 .dropdown-menu a,
@@ -47,9 +72,16 @@
 
 	border: none;
 
+	border-radius: 8px;
+
 	text-align: left;
 
 	color: var(--text);
 
 	cursor: pointer;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+	background: var(--surface-2);
 }

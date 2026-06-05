@@ -14,7 +14,8 @@
 
 <button
 	class="theme-toggle"
+	aria-label="Toggle theme"
 	onclick={toggleTheme}
 >
-	Toggle Theme
+	🌓
 </button>

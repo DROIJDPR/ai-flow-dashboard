@@ -10,8 +10,19 @@
   import ProfileDropdown from "$lib/components/layout/ProfileDropdown.svelte";
 
   let title = $derived(
-    page.url.pathname.replace("/", "").replace("-", " ") || "dashboard",
-  );
+	(
+		page.url.pathname
+			.replace("/", "")
+			.replace("-", " ") || "dashboard"
+	)
+		.split(" ")
+		.map(
+			(word) =>
+				word.charAt(0).toUpperCase() +
+				word.slice(1)
+		)
+		.join(" ")
+);
 
   function toggleSidebar() {
     sidebarOpen.update((value) => !value);

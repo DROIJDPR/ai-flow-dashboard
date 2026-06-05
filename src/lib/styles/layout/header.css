@@ -79,4 +79,22 @@
 	.menu-toggle {
 		display: block;
 	}
+
+	.header {
+		padding: 0 1rem;
+	}
+
+	.header-actions {
+		gap: 0.5rem;
+	}
+
+	.profile-info {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.search-input {
+		display: none;
+	}
 }

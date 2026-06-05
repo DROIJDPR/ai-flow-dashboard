@@ -46,3 +46,19 @@
 		margin-left: 0;
 	}
 }
+
+@media (max-width: 768px) {
+	.dashboard-main {
+		padding: 1rem;
+	}
+
+	.stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+
+		gap: 1rem;
+	}
+
+	.dashboard-grid {
+		grid-template-columns: 1fr;
+	}
+}
